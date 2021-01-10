@@ -1,0 +1,37 @@
+@import"_reset";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "_vars";
+
+
+
+html{
+    font-size: 62.5%;
+}
+body {
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color:$white;
+}
+
+a{
+    text-decoration: none;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+// import
+@import"bloks/_page";
+@import"bloks/_header";
+@import"bloks/_nav";
+@import"bloks/_search";
+@import"bloks/_subnav";
+@import"bloks/_saidbar";
+@import"bloks/_main";
+@import"bloks/_container";
+@import"bloks/storis";
+@import"bloks/add-post";
+@import"bloks/_profile";
+@import"bloks/_social";
+@import"bloks/_btn";
