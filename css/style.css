@@ -672,11 +672,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .add-post__textarea {
   display: block;
-  width: 70%;
+  width: 80%;
+  height: 26px;
   font-family: inherit;
   font-size: 1.5rem;
   color: #fff;
@@ -701,20 +705,57 @@ a {
   color: #ebebeb;
 }
 
-.add-post-file {
+.add-post__form_action {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.add-post-file,
+.add-post__send {
   display: block;
   width: 4.4rem;
   height: 4.4rem;
+  border: none;
   border-radius: 50%;
-  background-color: #d2d2d2;
+  cursor: pointer;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.add-post-file {
+  background-color: #ebebeb;
   background-image: url("../img/svg/photo-btn.svg");
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
 }
 
 .add-post-file input {
   display: none;
+}
+
+.add-post-file:hover {
+  background-color: #dedede;
+}
+
+.add-post__send {
+  margin-left: 1.5rem;
+  background-color: #3137C9;
+  background-image: url("../img/svg/send-btn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-post__send input {
+  display: none;
+}
+
+.add-post__send:hover {
+  background-color: #2c31b4;
 }
 
 .profile-avatar {
